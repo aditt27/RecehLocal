@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/navigation_item_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="16dp"
+        android:text="Title"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#616161" />
+
+    <ImageView
+        android:id="@+id/navigation_item_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="17dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_more_vertical"/>
+
+</RelativeLayout>

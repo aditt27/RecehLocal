@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#5c6bc0"
+        android:paddingTop="35dp"
+        android:text="@string/main_navigation_title"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryAccent"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:elevation="4dp"
+        android:id="@+id/myData" />
+
+    <ListView
+        android:id="@+id/main_navigation_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_navigation_add_data"
+        android:layout_below="@+id/myData"
+        android:listSelector="@color/selectedDatahighlight"
+        android:choiceMode="singleChoice">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:background="#5c6bc0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/main_navigation_add_data">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_add_item"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/main_navigation_add_data"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimaryAccent"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
